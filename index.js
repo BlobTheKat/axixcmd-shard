@@ -53,6 +53,6 @@ client.on("message", (msg) => {
     cdcache[msg.author.id+"@"+name] = Date.now()
     setTimeout(a=>delete cdcache[msg.author.id+"@"+name],c[name].cooldown*1000)
   }
-  c[name].execute(msg,re)
+  c[name].execute(msg,args)
 })
 undefined;
